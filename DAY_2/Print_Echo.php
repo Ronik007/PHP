@@ -16,4 +16,7 @@ echo "</br></br>A is $a </br> B is $b";
 
 //Method 4
 echo '</br></br>A is '.$a.'</br>B is '.$b;
+
+//Method 5
+echo "</br></br>A is $a </br>B is $b</br>Sum is ".($a+$b);
 ?>
