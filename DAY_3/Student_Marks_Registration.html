@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            
+            .center{
+                margin: auto;
+                width: 40%;
+                padding: 25px;
+                margin-top: 10px;
+            }
+            
+            input[type=text],input[type=number], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+                        
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            div {
+                align-items: center;   
+                width: 80%;
+                border-radius: 5px;
+                background-color: #E8ECFE;
+                padding: 20px;
+            }
+
+            h2{
+                color: #6F31BC;
+                margin-left: 2%;
+            }
+            
+        </style>
+        <title>Student_Mark_Registration</title>
+    </head>
+    
+    <body>
+        <div class="center">
+        
+            <form action="Student_Marksheet.php" method="post">
+                <h2>Hello! This is Students Mark Registration HTML Form</h2>
+                
+                <label for="name">Name of Student</label>
+                <input id="name" type="text" name="name" placeholder="Enter the Full Name of The Student" required="required"/>
+                
+                <label for="sem">Choose Semester</label>
+                <select name="sem" id="sem">
+                    <option value="1">Semester - 1</option>
+                    <option value="2">Semester - 2</option>
+                    <option value="3">Semester - 3</option>
+                    <option value="4" selected="selected">Semester - 4</option>
+                </select>
+            
+                <label for="maths">Mathematics</label>
+                <input id="maths" type="number" name="Maths" min="0" max="100" placeholder="Enter the Mathematics Mark" required="required"/>
+                
+                <label for="chm">Chemistry</label>
+                <input id="chm" type="number" name="Chemistry" min="0" max="100" placeholder="Enter the Chemistry Mark" required="required"/>
+                
+                <label for="phy">Physics</label>
+                <input id="phy" type="number" name="Physics" min="0" max="100" placeholder="Enter the Physics Mark" required="required"/>
+                
+                <label for="eng">English</label>
+                <input id="eng" type="number" name="English" min="0" max="100" placeholder="Enter the English Mark" required="required"/>
+                
+                <label for="com">Computer</label>
+                <input id="com" type="number" name="Computer" min="0" max="100" placeholder="Enter the Computer Mark" required="required"/>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
